@@ -8,6 +8,7 @@ import Timeline from "@/components/Timeline";
 import TypewriterLetter from "@/components/TypewriterLetter";
 import MusicPlayer from "@/components/MusicPlayer";
 import AboutHerCards from "@/components/AboutHerCards";
+import RibbonReveal from "@/components/RibbonReveal";
 
 const Index = () => {
   const [slide, setSlide] = useState(0);
@@ -15,6 +16,7 @@ const Index = () => {
   const [quizMsg, setQuizMsg] = useState("");
   const [blushPopup, setBlushPopup] = useState(false);
   const [noPos, setNoPos] = useState<{ x: number; y: number } | null>(null);
+  const [showRibbon, setShowRibbon] = useState(false);
 
   const triggerConfetti = useCallback(() => {
     setConfetti(true);
@@ -44,7 +46,7 @@ const Index = () => {
 
   const handleYes = () => {
     triggerConfetti();
-    setTimeout(() => nextSlide(), 1500);
+    setShowRibbon(true);
   };
 
   // Shared slide wrapper
@@ -70,6 +72,16 @@ const Index = () => {
   const isFinalSlide = slide === 5;
 
   return (
+    <>
+     {showRibbon && (
+      <RibbonReveal
+        onFinish={() => {
+          setShowRibbon(false);
+          nextSlide();
+        }}
+      />
+    )}
+
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary to-accent overflow-hidden">
       <FloatingHearts />
       <GlowParticles />
@@ -295,6 +307,7 @@ const Index = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
