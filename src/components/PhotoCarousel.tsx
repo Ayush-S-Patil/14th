@@ -41,7 +41,7 @@ const slides = [
   {
     src: photoOld,
     caption:
-      "Just you and me, baby...\nNo noise, no chaos…I see happiness ☺\n I see the person I want beside me for every tomorrow 💖.",
+      "Just you and me, baby...\nNo noise, no chaos…I see happiness 🥰\n I see the person I want beside me for every tomorrow 💖.",
   },
 ];
 
