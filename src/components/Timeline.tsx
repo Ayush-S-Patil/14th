@@ -45,7 +45,7 @@ const events = [
 
 const Timeline = () => (
   <div className="w-full max-w-3xl mx-auto py-16 px-6">
-    {/* Heading */}
+
     <h2
       className="text-4xl md:text-6xl font-vibes text-center 
                  bg-gradient-to-r from-primary via-accent to-primary 
@@ -57,7 +57,6 @@ const Timeline = () => (
 
     <div className="relative">
 
-      {/* Vertical glowing line */}
       <div
         className="absolute left-6 top-0 bottom-0 w-1 
                    bg-gradient-to-b from-primary/30 via-primary to-primary/30 
@@ -70,7 +69,7 @@ const Timeline = () => (
           className="relative flex items-start gap-8 mb-14 animate-fade-in-up"
           style={{ animationDelay: `${i * 0.3}s` }}
         >
-          {/* Glowing emoji circle */}
+          {/* Emoji Circle */}
           <div
             className="relative z-10 flex-shrink-0 w-12 h-12 rounded-full 
                        bg-primary/20 backdrop-blur-md 
@@ -81,13 +80,22 @@ const Timeline = () => (
             <span className="text-xl">{event.emoji}</span>
           </div>
 
-          {/* Glass card */}
+          {/* ✨ Glowing Card */}
           <div
-            className="bg-card/60 backdrop-blur-md 
-                       border border-primary/20 
-                       rounded-2xl p-6 shadow-xl 
-                       hover:scale-[1.02] transition-all duration-500"
+            className="card-glow group relative overflow-hidden
+                       bg-card/60 backdrop-blur-md
+                       rounded-2xl p-6 shadow-xl
+                       transition-all duration-500
+                       hover:shadow-2xl hover:-translate-y-2"
           >
+            {/* Shine overlay */}
+            <div
+              className="absolute inset-0 rounded-2xl pointer-events-none
+                         bg-gradient-to-tr from-white/10 via-transparent to-white/5
+                         opacity-0 group-hover:opacity-100
+                         transition duration-500"
+            />
+
             <p className="font-poppins font-semibold text-primary text-sm tracking-wide">
               {event.date}
             </p>
@@ -103,7 +111,6 @@ const Timeline = () => (
         </div>
       ))}
 
-      {/* Ending */}
       <div className="text-center mt-10 animate-fade-in">
         <p className="font-playfair text-2xl md:text-3xl text-primary italic">
           To be continued… my love ❤️

@@ -7,9 +7,7 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 import Timeline from "@/components/Timeline";
 import TypewriterLetter from "@/components/TypewriterLetter";
 import MusicPlayer from "@/components/MusicPlayer";
-
-
-import photoEyes from "@/assets/photo-eyes.jpeg";
+import AboutHerCards from "@/components/AboutHerCards";
 
 const Index = () => {
   const [slide, setSlide] = useState(0);
@@ -96,14 +94,47 @@ const Index = () => {
         <h2 className="text-3xl md:text-5xl font-vibes text-foreground mb-8 animate-fade-in-up">
           On which day did we propose each other? 💕
         </h2>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-wrap justify-center gap-10 mt-10">
           {["25th of Jan", "26th of Jan", "28th of Jan"].map((opt) => (
             <button
               key={opt}
               onClick={() => handleQuiz(opt)}
-              className="px-6 py-3 rounded-full bg-card/70 backdrop-blur-sm border border-primary/20 font-poppins text-foreground hover:bg-primary/20 transition-all duration-300 hover:scale-105"
+              className="relative w-40 h-36 flex items-center justify-center 
+                 text-white font-poppins font-semibold text-base
+                 transition-all duration-300 hover:scale-110 active:scale-95"
             >
-              {opt}
+              {/* SVG Heart Background */}
+              <svg
+                viewBox="0 0 100 90"
+                className="absolute inset-0 w-full h-full"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M50 80 
+             L10 40 
+             A20 20 0 0 1 50 25 
+             A20 20 0 0 1 90 40 
+             Z"
+                  fill="url(#heartGradient)"
+                />
+                <defs>
+                  <linearGradient
+                    id="heartGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="100%"
+                  >
+                    <stop offset="0%" stopColor="#ff6fa5" />
+                    <stop offset="100%" stopColor="#ff4d8d" />
+                  </linearGradient>
+                </defs>
+              </svg>
+
+              {/* Text */}
+              <span className="relative z-10 text-center px-4 drop-shadow-lg">
+                {opt}
+              </span>
             </button>
           ))}
         </div>
@@ -235,7 +266,6 @@ const Index = () => {
                bg-clip-text text-transparent 
                drop-shadow-lg animate-fade-in-up"
           >
-
             Our Little Memories ✨💗
           </h2>
 
@@ -247,6 +277,11 @@ const Index = () => {
           {/* Timeline */}
           <section className="px-6 pb-12">
             <Timeline />
+          </section>
+
+          {/* About Her Section */}
+          <section className="px-6 pb-12">
+            <AboutHerCards />
           </section>
 
           {/* Love Letter */}
