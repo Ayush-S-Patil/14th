@@ -1,14 +1,14 @@
 import { useState } from "react";
 
-const letterText = `You came into my life like the most beautiful dream, Shruu — the kind I never want to wake up from. From the moment you became mine, everything around me started to feel brighter, softer, more meaningful. Every second with you feels like pure magic, baby. The way you laugh fills my heart with warmth. The way you care makes me feel safe in a way I never even knew I needed. And the way you love me… it feels like home, Shruu.
+const letterText = `You came into my life like the most beautiful dream, Shruu — the kind I never want to wake up from. From the moment you became mine, everything started to feel brighter and more meaningful. Jaise meri zindagi mein achanak se roshni aa gayi ho. Every second with you feels magical, baby. When you laugh, it feels like the whole world is in the right place. The way you care for me makes me feel safe in ways I never even knew I needed. And the way you love me… it feels like home, Shruu — jaise main finally apni jagah pe hoon.
 
-I am so unbelievably grateful for you, baby. You didn't just enter my life — you transformed it completely. You changed my world in the most beautiful, gentle, and perfect way possible. Because of you, Shruu, I smile more. I hope more. I love more.
+I am so grateful for you, baby. Tumne meri zindagi ko sirf badla nahi, usse khoobsurat bana diya. Because of you, I smile more, hope more, and love more. Tumhare saath har chhoti si cheez bhi special lagti hai. Kabhi kabhi bas tumhe dekh kar hi dil shant ho jata hai.
 
-I love you more than words can ever explain, baby. I love you in ways I didn't even know my heart was capable of loving. I love you in the quiet moments, in the loud laughter, in our silly talks, in our deep conversations — in every version of us. My love for you grows stronger every single day, Shruu, and sometimes it scares me how deeply I feel for you… but in the most beautiful way.
+I love you more than words can explain. I love you in our quiet moments, in our loud laughter, in our silly talks and deep conversations — in every version of us. Har mood mein, har pal mein, tum mere liye perfect ho. My love for you grows stronger every single day, Shruu, and sometimes it amazes me how deeply I feel for you.
 
-I want to grow with you, baby. I want to dream with you. I want to build a lifetime full of memories, adventures, comfort, and endless love with you, Shruu. I want to hold your hand through everything life brings. You are my peace in chaos, my happiness in sadness, my strength when I feel weak. You are not just my love, baby — you are my forever.
+I want to grow with you, dream with you, and build a lifetime of memories with you, baby. Main har mushkil mein tumhara haath pakad kar chalna chahta hoon. You are my peace, my strength, my happiness. Tum meri aadat nahi ho, tum meri zarurat ho. You are not just my love — you are my forever.
 
-No words will ever truly be enough to describe how much I love you, Shruu… but I promise to spend every single day of my life showing you, proving it to you, and loving you more than I did the day before. Forever and always, baby. 💞
+No words will ever be enough to describe how much I love you, Shruu… but I promise to show you every single day. Hamesha tumhara, har din, har pal. Forever and always, baby. 💞
 
 Happy Valentine's Day, baby ❤️`;
 
