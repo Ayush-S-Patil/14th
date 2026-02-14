@@ -5,6 +5,7 @@ import photoBouquet from "@/assets/photo-bouquet.jpeg";
 import photoBracelet from "@/assets/photo-bracelet.jpeg";
 import photoShoulder from "@/assets/photo-shoulder.jpeg";
 import photoComforts from "@/assets/photo-comforts.jpeg";
+import photoOld from "@/assets/photo-old.jpeg";
 
 const slides = [
   {
@@ -37,6 +38,11 @@ const slides = [
     caption:
       "The way you hold me, care for me,\nand love me like your baby… 🥺\nI feel safest in your arms My Love 💖.",
   },
+  {
+    src: photoOld,
+    caption:
+      "Just you and me, baby...\nNo noise, no chaos…I see happiness ☺\n I see the person I want beside me for every tomorrow 💖.",
+  },
 ];
 
 const PhotoCarousel = () => {
@@ -57,7 +63,7 @@ const PhotoCarousel = () => {
     if (paused) return;
     const interval = setInterval(() => {
       nextSlide();
-    }, 3500);
+    }, 3800);
     return () => clearInterval(interval);
   }, [paused]);
 
