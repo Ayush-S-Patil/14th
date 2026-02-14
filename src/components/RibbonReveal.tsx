@@ -11,12 +11,12 @@ const RibbonReveal = ({ onFinish }: Props) => {
     // start opening after small delay
     const timer = setTimeout(() => {
       setOpen(true);
-    }, 350);
+    }, 400);
 
     // remove after animation
     const finish = setTimeout(() => {
       onFinish();
-    }, 1250);
+    }, 1500);
 
     return () => {
       clearTimeout(timer);
