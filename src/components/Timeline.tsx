@@ -11,7 +11,7 @@ const events = [
     emoji: "💋",
     title: "Our first date & our first kiss",
     caption:
-      "The day I realized I never want to lose you. That first kiss still lives in my heartbeat.",
+      "The day I realized my world feels incomplete without you. Our first date was magical, but that first kiss? It was like the universe paused just for us.",
   },
   {
     date: "The First 'I Love You' 💌",
